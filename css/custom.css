@@ -1,0 +1,124 @@
+/*
+
+Author: Sigurd Moland Wahl
+
+*/
+
+/* --- FONTS --- */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+/* --- OVERALL STYLES --- */
+body {
+	font-family: 'Lato', Helvetica, Calibri, Arial;
+	overflow-x:hidden;
+}
+
+h1,
+h2,
+h3 {font-weight:100;}
+
+	
+.navbar-default {
+		background-color:none;
+		background:none;
+		border:none;
+	}
+	
+.navbar-toggle {
+	border:none;
+	color:#000;
+	padding:2px;
+	border-radius:0;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	-o-border-radius:0;
+	-ms-border-radius:0;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle img:hover {
+	background-color:none;
+	background:none;
+}
+
+	
+.navbar-brand {
+		float:left;
+		overflow:hidden;
+}
+
+.navbar-brand div.nd-name {
+	display:inline-block;
+	float:left;
+}
+	
+.navbar-brand img {
+	float:left;
+	width:80px;
+	margin-top:-10px;
+	margin-right:5px;
+	margin-left:-10px;
+}
+
+/* --- CUSTOM styles for CAROUSEL --- */
+.carousel {
+  height: 350px;
+  margin-bottom: 60px;
+}
+
+.carousel-caption {
+  z-index: 10;
+}
+
+.carousel .item {
+  height: 350px;
+}
+
+.carousel-inner > .item {
+    -webkit-transition: 1s ease-in-out left;
+    -moz-transition: 1s ease-in-out left;
+    -o-transition: 1s ease-in-out left;
+    transition: 1s ease-in-out left;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	background:none;
+	background-color:none;
+}
+
+.carousel-inner > .item > .nd-carousel-slide {
+  position: absolute;
+  top:0;
+  left: 0;
+  min-width: 100%;
+  height: 350px;
+  background-color:#E7E7E7;
+}
+
+footer {
+	width:100%;
+	background-color:#333;
+	color:#fff;
+	padding:3em;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+/* --- /from bootstrap ---- */
